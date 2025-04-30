@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>烧猪坊 | jxxie的私房菜谱</title>
-    <meta name="keywords" content="烧猪坊, 家常菜谱, 美食, 中餐, 经典菜谱">
-    <meta name="description" content="jxxie的私房菜谱——东坡肉、五谷丰登、汤的宇宙，探索正宗美食的味道">
+    <meta name="keywords" content="烧猪坊, jxxie的私人菜谱">
+    <meta name="description" content="jxxie的私房菜谱——探索正宗美食的味道">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* 保持原有整体布局与风格 */
@@ -189,6 +189,7 @@
             <li><a onclick="toggleCategory('staple')">🍚 五谷丰登</a></li>
             <li><a onclick="toggleCategory('soup')">🍲 汤的宇宙</a></li>
             <li><a onclick="toggleCategory('noodles')">🍜 面面俱到</a></li>
+            <li><a onclick="toggleCategory('noodles')">🧐 童年记忆</a></li>
         </ul>
     </nav>
 
@@ -197,14 +198,42 @@
         <section id="meat" class="category">
             <h2>🐖 肉食主义</h2>
             <ul class="recipe-list">
-                <li><a onclick="toggleRecipe('huiguorou')">回锅肉</a></li>
                 <li><a onclick="toggleRecipe('suozi_xie')">梭子蟹炒年糕</a></li>
+                <li><a onclick="toggleRecipe('yaqian_niurou')">牙签牛肉</a></li>
+                <li><a onclick="toggleRecipe('huiguorou')">回锅肉</a></li>
                 <li><a onclick="toggleRecipe('xianjiao_niu')">鲜椒碎牛肉</a></li>
                 <li><a onclick="toggleRecipe('shuizhu_niu')">水煮牛肉</a></li>
                 <li><a onclick="toggleRecipe('jiaoma_ji')">椒麻鸡</a></li>
-                <li><a onclick="toggleRecipe('dongporou')">东坡肉</a></li>
                 <li><a onclick="toggleRecipe('cu_zheng_ji')">醋蒸鸡</a></li>
             </ul>
+
+            <!-- 牙签牛肉 -->
+            <div id="huiguorou" class="recipe">
+                <h3>牙签牛肉</h3>
+                <h4>⚖️材料配比</h4>
+                <div style="margin-left:20px;">
+                    <p><strong>主料</strong></p>
+                    <ul>
+                        <li>牛肋条 500g</li>
+                    </ul>
+                    <p><strong>辅料</strong></p>
+                    <ul>
+                        <li>姜片</li>
+                        <li>蒜末、干辣椒节五五开装半个饭碗</li>
+                        <li>辣椒面一小把，白芝麻一小把</li>
+                        <li>生抽 1小勺、耗油1小勺、料酒 1小勺、红薯淀粉2小勺</li>
+                        <li>香菜两根，小红葱3个</li>
+                    </ul>
+                </div>
+                <h4>🔪庖厨之术</h4>
+                <ol style="margin-left:20px;">
+                    <li>将牛肋条肥瘦均匀切成两个大拇指指甲盖大小的丁</li>
+                    <li>牛肉加入料酒，生抽、耗油、淀粉、姜丝抓拌均匀，腌制30分钟</li>
+                    <li>起锅烧油（适量即可），放入香菜，红葱，姜片爆香，加入牛肉翻滚煎炸</li>
+                    <li>辅料炸干后捞出，锅中继续加入蒜末，干辣椒节，翻炒出香味</li>
+                    <li>加入辣椒面，撒上白芝麻，加入适量盐，搅匀出锅</li>
+                </ol>
+            </div>
 
             <!-- 回锅肉 -->
             <div id="huiguorou" class="recipe">
@@ -336,34 +365,6 @@
                 </ol>
             </div>
 
-            <!-- 东坡肉 -->
-            <div id="dongporou" class="recipe">
-                <h3>东坡肉</h3>
-                <span class="time-info">烹饪时间：40分钟</span>
-                <span class="time-info">炖煮时间：3小时</span>
-                <h4>⚖️材料配比</h4>
-                <div style="margin-left:20px;">
-                    <p><strong>主料</strong></p>
-                    <ul>
-                        <li>常皮五花肉 800g</li>
-                        <li>绍兴黄酒 500ml</li>
-                    </ul>
-                    <p><strong>灵魂调料</strong></p>
-                    <ul>
-                        <li>冰糖 50g</li>
-                        <li>小葱 2根</li>
-                    </ul>
-                </div>
-                <h4>🔪庖厨之术</h4>
-                <ol style="margin-left:20px;">
-                    <li>将肉块洗净、去毛整形，在表面划上井字花刀，并用细绳绑紧。</li>
-                    <li>将整块五花肉放入开水中焯烫，捞出后用冷水冲洗备用。</li>
-                    <li>在砂锅中放入肉块、绍兴黄酒、冰糖和小葱，大火煮开后转小火炖煮约3小时，期间翻面一次。</li>
-                    <li>待肉质酥软、汤汁浓稠后关火，静置几分钟后切块装盘。</li>
-                </ol>
-                <p style="margin-top:10px; font-style:italic;">📌提示：用原味代替酱油，酒香更清淡。</p>
-            </div>
-
             <!-- 醋蒸鸡 -->
             <div id="cu_zheng_ji" class="recipe">
                 <h3>醋蒸鸡</h3>
@@ -482,31 +483,34 @@
         <section id="soup" class="category">
             <h2>🍲 汤的宇宙</h2>
             <ul class="recipe-list">
-                <li><a onclick="toggleRecipe('chicken_soup')">虫草花炖鸡汤</a></li>
+                <li><a onclick="toggleRecipe('chicken_soup')">潮汕牛肉汤</a></li>
                 <li><a onclick="toggleRecipe('haidai_paigu')">海带排骨汤</a></li>
             </ul>
 
-            <!-- 虫草花炖鸡汤 -->
+            <!-- 潮汕牛肉汤 -->
             <div id="chicken_soup" class="recipe">
-                <h3>虫草花炖鸡汤</h3>
+                <h3>潮汕牛肉汤</h3>
                 <h4>⚖️材料配比</h4>
                 <div style="margin-left:20px;">
                     <p><strong>主料</strong></p>
                     <ul>
-                        <li>整鸡或鸡腿 500g</li>
+                        <li>牛里脊肉 300g</li>
                     </ul>
                     <p><strong>辅料</strong></p>
                     <ul>
-                        <li>虫草花 10克</li>
-                        <li>姜片、料酒适量</li>
-                        <li>盐、葱花适量</li>
+                        <li>红薯淀粉</li>
+                        <li>盐、生抽、葱花、料酒适量</li>
+                        <li>姜丝</li>
+                        <li>一丢丢醋</li>
                     </ul>
                 </div>
                 <h4>🔪庖厨之术</h4>
                 <ol style="margin-left:20px;">
-                    <li>将鸡肉洗净切块，焯水去腥备用。</li>
-                    <li>在砂锅中放入鸡块、虫草花、姜片和料酒，加足水煮开后转小火炖煮1.5至2小时。</li>
-                    <li>出锅前加入盐调味，撒上葱花装饰即可。</li>
+                    <li>牛里脊用刀背拍散肉筋，剔除筋膜。</li>
+                    <li>加入盐，生抽，料酒腌制10分钟。</li>
+                    <li>添加红薯淀粉，反复抓揉牛肉后滴入香油。</li>
+                    <li>继续加入红薯淀粉，抓揉牛肉，重复上一步骤4-5次，直至牛里脊肉顺滑、劲道、黏糊软烂。</li>
+                    <li>烧开水，加入姜丝，手揪下牛肉小丁下锅，加入生抽、盐和一丢丢醋，沸腾后关火盛至有葱花的汤碗。</li>
                 </ol>
             </div>
 
@@ -596,13 +600,64 @@
                 </ol>
             </div>
         </section>
+
+        <!-- 精神食粮分类 -->
+        <section id="noodles" class="category">
+            <h2>💡 童年记忆</h2>
+            <ul class="recipe-list">
+                <li><a onclick="toggleRecipe('wulin')">武林外传之同福客栈</a></li>
+                <li><a onclick="toggleRecipe('jinyong')">金庸群侠传</a></li>
+            </ul>
+
+            <!-- 武林外传之同福客栈 -->
+            <div id="wulin" class="recipe">
+                <h3>武林外传之同福客栈</h3>
+                <h4>⚖️材料配比</h4>
+                <div style="margin-left:20px;">
+                    <p><strong>主料</strong></p>
+                    <ul>
+                        <li><a href="https://www.4399.com/flash/17605.htm#search3-09f3">武林外传之同福客栈</a></li>
+                    </ul>
+                    <p><strong>辅料</strong></p>
+                    <ul>
+                        <li>BGM《茉莉花》</li>
+                    </ul>
+                </div>
+                <h4>🔪庖厨之术</h4>
+                <ol style="margin-left:20px;">
+                    <li>点击链接进入我的童年</li>
+                </ol>
+            </div>
+
+            <!-- 金庸群侠传 -->
+            <div id="seafood_mian" class="recipe">
+                <h3>金庸群侠传</h3>
+                <h4>⚖️材料配比</h4>
+                <div style="margin-left:20px;">
+                    <p><strong>主料</strong></p>
+                    <ul>
+                        <li><a href="https://www.4399.com/flash/4246.htm">金庸群侠传</a></li>
+                    </ul>
+                    <p><strong>辅料</strong></p>
+                    <ul>
+                        <li>周边游戏：野球拳</li>
+                    </ul>
+                </div>
+                <h4>🔪庖厨之术</h4>
+                <ol style="margin-left:20px;">
+                    <li>石头剪刀布进入游戏</li>
+                </ol>
+            </div>
+        </section>
+
+       
     </main>
 
     <footer>
         <div class="manifesto" style="margin-top:50px; text-align:center">
             📍 本馆铁律：所有菜品保证不含胡椒 &amp; 花椰菜&amp;咖喱
         </div>
-        <p>© 2025 烧猪坊 - 更新于2月</p>
+        <p>© 2025 烧猪坊，不止菜品 - 更新于2025年5月</p>
     </footer>
 
     <script>
